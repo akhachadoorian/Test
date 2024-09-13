@@ -27,17 +27,17 @@ const start = async () => {
     )
   })
 
-  const start = async () => {
-    await payload.init({
-      secret: process.env.PAYLOAD_SECRET,
-      express: app,
-    })
+  // const start = async () => {
+  //   await payload.init({
+  //     secret: process.env.PAYLOAD_SECRET,
+  //     express: app,
+  //   })
   
-    app.listen(3000, async () => {
-      console.log(
-        "Express is now listening for incoming connections on port 3000."
-      )
-    })
+    // app.listen(3000, async () => {
+    //   console.log(
+    //     "Express is now listening for incoming connections on port 3000."
+    //   )
+    // })
 }
 
 start()
